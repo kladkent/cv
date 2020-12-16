@@ -1,0 +1,208 @@
+*{
+	box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	margin: 0px;
+	background-color: #f0f0f0;
+}
+
+h1{
+	margin: 0px;
+	font-size: 24px;
+}
+
+h2{
+	margin: 0px;
+	font-size: 22px;
+}
+
+h3{
+	margin: 0px;
+	font-size: 20px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h5{
+	margin: 0px;
+	font-size: 16px;	
+}
+
+p{
+	font-size: 16px;
+}
+
+img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+}
+
+.header{
+	background-color: rgb(0,32,96);
+	color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 15px;
+}
+
+.title{
+	padding: 40px 15px 40px 15px;
+}
+
+.image{
+	text-align: right;
+	padding-right: : 15px;
+}
+
+.content-1{
+	padding-bottom: 0px;
+}
+
+.content-2{
+	padding-top: 0px;
+}
+
+.summary, .work-experience, .trainings, .contact,.projects, .technologies, .conferences, .reference{
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 15px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.summary h4, .work-experience h4, .trainings h4, .contact h4,.projects h4, .technologies h4, .conferences h4, .reference h4{
+	text-align: center;
+}
+
+.summary p{
+	text-align: justify;
+	text-indent: 25px;
+}
+
+.work-experience h5{
+	margin: 0px;
+	text-align: center;
+}
+
+.contact ul, .reference ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+}
+
+.footer{
+	height: 134px;
+	background-color: rgb(0,32,96);
+	color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 50px;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  .content-1{
+  	padding-top: 0px;
+  	padding-right: 0px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+
+  .summary h4, .work-experience h4, .trainings h4, .contact h4,.projects h4, .technologies h4, .conferences h4, .reference h4{
+	text-align: left;	
+  }
+
+}
+
+
+
+
+
