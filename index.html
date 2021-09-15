@@ -176,8 +176,12 @@
 </div>
 
 <div class="footer">
-	<p>Copyright <script>document.write(new Date().getFullYear())</script> by Kent Lester A. Dialino</p>
+	<p>Copyright <em id="year"></em> by Kent Lester A. Dialino</p>
 </div>
-	
+	<script>
+		var d = new Date();
+		var n = d.getFullYear();
+		document.getElementById("year").innerHTML = n;
+	</script>
 </body>
 </html>
